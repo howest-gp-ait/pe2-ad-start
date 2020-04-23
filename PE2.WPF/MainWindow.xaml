@@ -1,0 +1,23 @@
+﻿<Window x:Class="PE2.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PE2.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="799.181" Width="1001.639">
+    <Grid>
+        <Button x:Name="btnReadCSV" Content="READ CSV" HorizontalAlignment="Left" Height="34" Margin="32,10,0,0" VerticalAlignment="Top" Width="114" Click="btnReadCSV_Click"/>
+        <Grid Margin="211,10,10,404" Background="#FFF9F8E6">
+            <ScrollViewer>
+                <TextBlock x:Name="tbKCSV"   HorizontalAlignment="Left"  Margin="0,0,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" />
+            </ScrollViewer>
+        </Grid>
+        <Button x:Name="btnProcess" Content="PROCESS CSV" HorizontalAlignment="Left" Height="34" Margin="32,397,0,0" VerticalAlignment="Top" Width="114" Click="btnProcess_Click"/>
+        <Grid Margin="211,397,10,17" Background="#FFEFF9E6">
+            <ScrollViewer>
+                <TextBlock x:Name="tbKRapport"   HorizontalAlignment="Left"  Margin="0,0,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" />
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Window>
